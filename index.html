@@ -13,11 +13,14 @@
 </head>
 
 <body>
-    <div id="carousel">
-        <ul id="slides">
-          <!-- Le immagini verranno aggiunte dinamicamente qui -->
-        </ul>
-      </div>
+    <div id="carousel-container">
+        <h2 id="image-title"></h2>
+        <p id="image-description"></p>
+        <img id="carousel-image" src="" alt="Slide">
+        <br>
+        <button onclick="prevImage()">Indietro</button>
+        <button onclick="nextImage()">Avanti</button>
+    </div>
 
     <script src="function.js"></script>
     <script src="main.js"></script>

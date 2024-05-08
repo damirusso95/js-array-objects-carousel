@@ -4,24 +4,13 @@
 	margin: 0;
 	padding: 0;
 }
-#carousel {
-width: 500px;
-height: 250px;
-overflow: hidden;
-margin: 0 auto;
-position: relative;
+  /* Stile per centrare il contenuto */
+  #carousel-container {
+    text-align: center;
+    margin-top: 50px;
 }
-
-#carousel ul {
-list-style: none;
-padding: 0;
-margin: 0;
-width: 900px; /* Larghezza totale delle immagini */
-transition: transform 0.5s ease;
-}
-
-#carousel ul li {
-float: left;
-width: 300px; 
-height: 250px;/* Larghezza di ogni immagine */
+/* Stile per l'immagine */
+#carousel-image {
+    max-width: 400px;
+    max-height: 300px;
 }

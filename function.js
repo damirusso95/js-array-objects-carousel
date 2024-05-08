@@ -18,3 +18,24 @@
 //   la slide che deve attivarsi sarà l'ultima e viceversa per l'ultima slide se l'utente clicca la freccia verso sinistra.
 
  // Funzione che mi porta avanti di 1
+
+
+ // Funzione per aggiornare l'immagine e le informazioni
+function updateImage() {
+    let currentImage = images[currentIndex];
+    document.getElementById('carousel-image').src = currentImage.src;
+    document.getElementById('image-title').textContent = currentImage.title;
+    document.getElementById('image-description').textContent = currentImage.description;
+}
+
+// Funzione per passare all'immagine successiva
+function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateImage();
+}
+
+// Funzione per tornare all'immagine precedente
+function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateImage();
+}
